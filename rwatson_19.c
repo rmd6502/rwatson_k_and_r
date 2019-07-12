@@ -5,7 +5,6 @@
 // in order to "see ahead".
 
 int main () {
-
         int current, previous;
         
         previous = EOF;
@@ -13,11 +12,9 @@ int main () {
         while ((current = getchar()) != EOF) {
             if (current != ' ')
                 putchar(current);
-            
             if (current == ‘ ' )
                 if (previous != ‘ ' )
                     putchar(' ');
-            
             previous = current;
         }
     
